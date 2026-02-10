@@ -1,0 +1,177 @@
+:root {
+    --bg-color: #F8F9FA;
+    --card-bg: #FFFFFF;
+    --navy-primary: #2C3E50;
+    --accent-blue: #5D80B6;
+    --border-color: #D1D9E6;
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    
+    font-size: 16px; 
+}
+
+[data-theme="dark"] {
+    --bg-color: #605c5c;
+    --card-bg: #1E1E1E;
+    --navy-primary: #E0E0E0;
+    --border-color: #333333;
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+* { margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+       font-family: 'Inter', sans-serif;
+        transition: background 0.3s, color 0.3s, font-size 0.2s ease;
+     }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--navy-primary);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    margin-top: 100px;
+}
+
+.container { 
+    width: 100%;
+     max-width: 850px;
+      text-align: center;
+     }
+
+.controls-overlay {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: right;
+    z-index: 1000;
+
+    
+}
+
+.accessibility-controls button {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--navy-primary);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.theme-toggle {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--navy-primary);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.college-logo { 
+    height: 5rem;
+     margin-bottom: 1.5rem;
+    }
+
+.logo {
+     font-size: 1.9rem;
+      margin-bottom: 0.5rem;
+     }
+
+.brand-uni {
+     font-weight: 800;
+      color: #2C3E50; 
+    }
+
+[data-theme="dark"] .brand-uni {
+     color: #8AB4F8;
+     }
+
+
+.brand-helper {
+     font-weight: 300;
+      color: #2C3E50;
+     }
+
+.tagline {
+    color: var(--accent-blue);
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+.search-container {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 3rem;
+}
+
+.icon-box {
+    background: #7E99C3;
+    color: white;
+    width: 45px; height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+input {
+    flex: 1;
+     border: none;
+      outline: none;
+       background: transparent;
+        color: var(--navy-primary);
+         font-size: 1.1rem;
+         }
+
+
+.faq-title {
+     font-size: 1.2rem;
+      margin-bottom: 2rem;
+      align-items: center;
+      justify-content: center;
+     }
+
+.faqs { display: flex;
+     flex-wrap: wrap;
+      justify-content: center;
+       gap: 1rem;
+     }
+
+.faq {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.faq i {
+     color: #2C3E50;
+     }
+     
+
+[data-theme="dark"] .chip i {
+     color: #8AB4F8;
+     }
+
+/* 5. RESPONSIVENESS */
+@media (max-width: 600px) {
+    .search-container { border-radius: 20px; }
+    .input-tools { display: none; }
+    .chip { width: 100%; }
+}

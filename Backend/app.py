@@ -4,6 +4,10 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 
 app = Flask(__name__)
 
+from flask_cors import CORS
+app = Flask(__name__)
+CORS(app)
+
 # Load embeddings
 embedding = HuggingFaceEmbeddings()
 

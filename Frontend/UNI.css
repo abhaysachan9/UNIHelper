@@ -9,13 +9,6 @@
     font-size: 16px; 
 }
 
-[data-theme="dark"] {
-    --bg-color: #000000;
-    --card-bg: #000000;
-    --navy-primary: #E0E0E0;
-    --border-color: #333333;
-    --shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
 
 * { margin: 0;
      padding: 0;
@@ -158,6 +151,7 @@ input {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    
 }
 
 .faq i {
@@ -175,3 +169,4 @@ input {
     .input-tools { display: none; }
     .chip { width: 100%; }
 }
+

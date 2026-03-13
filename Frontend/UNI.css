@@ -158,6 +158,7 @@ input {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    
 }
 
 .faq i {
@@ -175,3 +176,4 @@ input {
     .input-tools { display: none; }
     .chip { width: 100%; }
 }
+

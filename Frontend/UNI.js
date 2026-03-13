@@ -13,9 +13,9 @@ themeBtn.addEventListener('click', () => {
 
 function setFontSize(size) {
     const root = document.documentElement;
-    if (size === 'small') root.style.fontSize = '14px';
-    if (size === 'medium') root.style.fontSize = '18px';
-    if (size === 'large') root.style.fontSize = '22px';
+    if (size === 'small') root.style.fontSize = '10px';
+    if (size === 'medium') root.style.fontSize = '20px';
+    if (size === 'large') root.style.fontSize = '25px';
 }
 
 const input = document.getElementById('typing-input');
@@ -57,4 +57,6 @@ function typeAnimation() {
 
 
 window.onload = typeAnimation;
+
+
 
